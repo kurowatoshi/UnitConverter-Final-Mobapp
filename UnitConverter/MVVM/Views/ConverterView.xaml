@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UnitConverter.MVVM.Views.ConverterView"
              Title="{Binding QuantityName}"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="True">
     <ContentPage.Resources>
         <Color x:Key="TextColor">White</Color>
         <Color x:Key="AppColor1">Darkgreen</Color>
@@ -18,7 +18,7 @@
 
             <Image
     Grid.ColumnSpan="3"
-    Source="bgbg.jpg"
+    Source="blackboarding.jpg"
     Aspect="AspectFill"
     HorizontalOptions="FillAndExpand"
     VerticalOptions="FillAndExpand"/>
@@ -29,12 +29,16 @@
 
                 <Entry
                     FontSize="100"
+                    FontAttributes="Bold"
+                    FontFamily="Candara"
                     HorizontalTextAlignment="Center"
                     Text="{Binding FromValue}"
                     TextColor="{StaticResource TextColor}"
                     ReturnCommand="{Binding ReturnCommand}" />
                 <Picker
                     HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    FontFamily="Candara"
                 TextColor="{StaticResource TextColor}"
                     ItemsSource="{Binding FromMeasures}" 
                     SelectedItem="{Binding CurrentFromMeasure}"
@@ -47,7 +51,7 @@
             Grid.Row="1">
             <Image
     Grid.ColumnSpan="3"
-    Source="bgbg.jpg"
+    Source="blackboarding"
     Aspect="AspectFill"
     HorizontalOptions="FillAndExpand"
     VerticalOptions="FillAndExpand"/>
@@ -58,11 +62,15 @@
 
                 <Label
                     FontSize="100"
+                    FontAttributes="Bold"
+                    FontFamily="Candara"
                     HorizontalTextAlignment="Center"
                     Text="{Binding ToValue, StringFormat='{0:0.##}'}"
                     TextColor="{StaticResource TextColor}" />
                 <Picker
                     HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    FontFamily="Candara"
                     TextColor="{StaticResource TextColor}"
                     ItemsSource="{Binding ToMeasures}"
                     SelectedItem="{Binding CurrentToMeasure}"

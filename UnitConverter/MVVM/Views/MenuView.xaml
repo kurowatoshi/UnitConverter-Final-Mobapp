@@ -13,7 +13,7 @@
 
         <Image
             Grid.ColumnSpan="3"
-            Source="bgbg.jpg"
+            Source="haha.jpg"
             Aspect="AspectFill"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand"/>
@@ -22,23 +22,25 @@
         Grid.ColumnSpan="3"
         BackgroundColor="Transparent"
         FontAttributes="Bold"
+        FontFamily="Candara"
         FontSize="41"
         HorizontalTextAlignment="Center"
         VerticalTextAlignment="Center"
-        Text="UNIT INVERTER"
+        Text="UNIT CONVERTER"
         TextColor="Black"
         TranslationX="2"
         TranslationY="0"
         />
 
         <Label
+        FontFamily="Candara"
         Grid.ColumnSpan="3"
         BackgroundColor="Transparent"
         FontAttributes="Bold"
         FontSize="41"
         HorizontalTextAlignment="Center"
         VerticalTextAlignment="Center"
-        Text="UNIT INVERTER"
+        Text="UNIT CONVERTER"
         TextColor="{StaticResource TextColor}" 
         />
 
@@ -46,7 +48,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="1" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="ℹ️" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Information" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Information" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -56,7 +59,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="1" Grid.Column="1" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="🔊" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Volume" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Volume" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -66,7 +70,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="1" Grid.Column="2" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="📏" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Length" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Length" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -76,7 +81,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="2" Grid.Column="0" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="⚖️" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Mass" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Mass" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -86,7 +92,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="2" Grid.Column="1" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="🌡️" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Temperature" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Temperature" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -96,7 +103,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="2" Grid.Column="2" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="⚡" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Energy" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Energy" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara" />
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -106,7 +114,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="3" Grid.Column="0" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="📐" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Area" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Area" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -116,7 +125,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="3" Grid.Column="1" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="🚀" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Speed" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Speed" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
@@ -126,7 +136,8 @@
         <Grid RowDefinitions=".7*, .3*" Grid.Row="3" Grid.Column="2" Padding="15">
             <Image Source="quantity.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" Text="⏳" TextColor="{StaticResource TextColor}" />
-            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Duration" TextColor="{StaticResource TextColor}" />
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Duration" TextColor="{StaticResource TextColor}"                     FontAttributes="Bold"
+                    FontFamily="Candara"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
