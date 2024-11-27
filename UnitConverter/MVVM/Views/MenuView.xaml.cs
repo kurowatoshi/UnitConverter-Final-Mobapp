@@ -20,7 +20,7 @@ public partial class MenuView : ContentPage
 		var converterView =
 			new ConverterView
 			{
-				//BindingContext = new ConverterViewModel(option)
+				BindingContext = new ConverterViewModel(option)
 			};
 
 		Navigation.PushAsync(converterView);

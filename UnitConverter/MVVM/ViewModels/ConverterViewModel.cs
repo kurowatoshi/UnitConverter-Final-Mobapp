@@ -13,50 +13,50 @@ namespace UnitConverter.MVVM.ViewModels
     [AddINotifyPropertyChangedInterface]
     public class ConverterViewModel
     {
-        //public string QuantityName { get; set; }
-        //public ObservableCollection<string> FromMeasures { get; set; }
-        //public ObservableCollection<string> ToMeasures { get; set; }
-        //public string CurrentFromMeasure { get; set; }
-        //public string CurrentToMeasure { get; set; }
-        //public double FromValue { get; set; } = 1;
-        //public double ToValue { get; set; }
+        public string QuantityName { get; set; }
+        public ObservableCollection<string> FromMeasures { get; set; }
+        public ObservableCollection<string> ToMeasures { get; set; }
+        public string CurrentFromMeasure { get; set; }
+        public string CurrentToMeasure { get; set; }
+        public double FromValue { get; set; } = 1;
+        public double ToValue { get; set; }
 
-        //public ICommand ReturnCommand =>
-        //    new Command(() =>
-        //    {
-        //        Convert();
-        //    });
+        public ICommand ReturnCommand =>
+            new Command(() =>
+            {
+                Convert();
+            });
 
-        //public ConverterViewModel(string quantityName)
-        //{
-        //    QuantityName = quantityName;
-        //    FromMeasures = LoadMeasures();
-        //    ToMeasures = LoadMeasures();
-        //    CurrentFromMeasure = FromMeasures.FirstOrDefault();
-        //    CurrentToMeasure = ToMeasures.Skip(1).FirstOrDefault();
+        public ConverterViewModel(string quantityName)
+        {
+            QuantityName = quantityName;
+            FromMeasures = LoadMeasures();
+            ToMeasures = LoadMeasures();
+            CurrentFromMeasure = FromMeasures.FirstOrDefault();
+            CurrentToMeasure = ToMeasures.Skip(1).FirstOrDefault();
 
-        //    Convert();
-        //}
+            Convert();
+        }
 
-        //public void Convert()
-        //{
-        //    var result =
-        //        UnitsNet
-        //        .UnitConverter
-        //        .ConvertByName(FromValue, QuantityName, CurrentFromMeasure, CurrentToMeasure);
-        //    ToValue = result;
-        //}
+        public void Convert()
+        {
+            var result =
+                UnitsNet
+                .UnitConverter
+                .ConvertByName(FromValue, QuantityName, CurrentFromMeasure, CurrentToMeasure);
+            ToValue = result;
+        }
 
-        //private ObservableCollection<string> LoadMeasures()
-        //{
-        //    var types =
-        //        Quantity.Infos
-        //        .FirstOrDefault(x => x.Name == QuantityName)
-        //        .UnitInfos
-        //        .Select(u => u.Name)
-        //        .ToList();
+        private ObservableCollection<string> LoadMeasures()
+        {
+            var types =
+                Quantity.Infos
+                .FirstOrDefault(x => x.Name == QuantityName)
+                .UnitInfos
+                .Select(u => u.Name)
+                .ToList();
 
-        //    return new ObservableCollection<string>(types);
-        //}
+            return new ObservableCollection<string>(types);
+        }
     }
 }
